@@ -1,0 +1,22 @@
+{
+  "name": "STAC profile for Aerial Survey descriptions",
+  "highlighted": true,
+  "abstract": "Describes aspects of aerial surveys to allow generated data to be understood",
+  "status": "under-development",
+  "dateTimeAddition": "2023-09-18T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-incubator",
+  "version": "0.1",
+  "dateOfLastChange": "2023-09-18",
+  "sources": [
+
+  ],
+  "scope": "dev",
+  "tags": [
+    "DCAT",
+    "profile",
+    "Records",
+    "STAC",
+    "EarthCODE"
+  ]
+}

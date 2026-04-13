@@ -1,0 +1,14 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+description: 'STAC metadata with DCAT mappings for Aerial surveys'
+anyOf:
+  - allOf:
+    - anyOf:
+      - $ref: bblocks://ogc.geo.geodcat.stac.geodcat-stac-item
+      - $ref: bblocks://ogc.geo.geodcat.stac.geodcat-stac-collection
+    - $ref: bblocks://ogc.domain.aerial-survey.survey-process-prov
+  - $ref: bblocks://ogc.geo.geodcat.geodcat-records
+properties:
+  track:
+    $ref: bblocks://ogc.geo.moving-features.schema
+
+

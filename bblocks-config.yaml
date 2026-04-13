@@ -1,22 +1,33 @@
 # A short, descriptive name of this building block collection
-name: My OGC Building Blocks repository
+name: Aerial Survey Metadata
 
 # Short abstract for this collection (optional)
 abstract: |
-  This is an example text for the abstract. It should be short and to the point.
-  A "Tell me more" link will appear if there is an additional description with a longer explanation.
+  A building blocks architecture for supporting the description of aerial surveys and the data products generated
 
 # Description for this collection (optional)
 description: |
-  The description can be longer. Both **the abstract** *and the description* support Markdown,
-  including [links](https://google.es).
+  Aerial surveys have many facets that may impact the interpretation of the generated data and the ability to accurately re-survey. 
+  
+  Accordingly this model supports both coarse and fine-grained descriptions of flight plans and systems.
+  
+  The goal is to identify and re-use existing OGC standards that address common parts of the domain challenge.
+  
+  This includes a detail description of an actual flight path using the moving features standard, which allows for correlation of changing conditions in time and space.
+  
+  Metadata using OGC API records, STAC and DCAT is enabled - and ISO or other metadata record models may be introduced as required,
 
 # Customize the following prefix (will be prepended to the path of the building blocks):
-identifier-prefix: ogc.bbr.template.
+identifier-prefix: ogc.domain.aerial-survey.
 
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
 imports:
   - default
+  - https://ogcincubator.github.io/bblocks-stac
+  - https://ogcincubator.github.io/bblocks-movingfeatures/
+  - https://opengeospatial.github.io/ogcapi-sosa/
+  - https://ogcincubator.github.io/geodcat-ogcapi-records
+
 
 # Whether to enable the (highly experimental) downcompiling of JSON schemas to an OpenAPI 3.0-compatible
 # version
