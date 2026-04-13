@@ -2,20 +2,20 @@
   "name": "Aerial Survey Metadata",
   "abstract": "A building blocks architecture for supporting the description of aerial surveys and the data products generated\n",
   "description": "Aerial surveys have many facets that may impact the interpretation of the generated data and the ability to accurately re-survey. \n\nAccordingly this model supports both coarse and fine-grained descriptions of flight plans and systems.\n\nThe goal is to identify and re-use existing OGC standards that address common parts of the domain challenge.\n\nThis includes a detail description of an actual flight path using the moving features standard, which allows for correlation of changing conditions in time and space.\n\nMetadata using OGC API records, STAC and DCAT is enabled - and ISO or other metadata record models may be introduced as required,\n",
-  "modified": "2026-04-13T08:42:31.990170",
+  "modified": "2026-04-13T08:44:20.065273",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"8183e80415ce6fc50bf23df54045ccca9a1f894d",
-      "shortCommitId": "\"8183e8",
-      "date": "2026-04-10T08:50:01+00:00\""
+      "commitId": "\"229d3ea904e14fac939001a372593461adafa4e2",
+      "shortCommitId": "\"229d3e",
+      "date": "2026-04-13T08:41:58+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-aerial-survey",
   "gitHubRepository": "https://github.com/ogcincubator/bblocks-aerial-survey/blob/master/",
-  "baseURL": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/",
-  "viewerURL": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/",
-  "validationReport": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/tests/report.html",
-  "validationReportJson": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/tests/report.json",
+  "baseURL": "https://ogcincubator.github.io/bblocks-aerial-survey/",
+  "viewerURL": "https://ogcincubator.github.io/bblocks-aerial-survey/",
+  "validationReport": "https://ogcincubator.github.io/bblocks-aerial-survey/build/tests/report.html",
+  "validationReportJson": "https://ogcincubator.github.io/bblocks-aerial-survey/build/tests/report.json",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json",
     "https://ogcincubator.github.io/bblocks-stac/build/register.json",
@@ -48,29 +48,29 @@
         "EarthCODE"
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/survey-process-prov/context.jsonld",
+      "ldContext": "https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/survey-process-prov/context.jsonld",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/survey-process-prov/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/survey-process-prov/schema.json"
+        "application/yaml": "https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/survey-process-prov/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/survey-process-prov/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/_sources/survey-process-prov/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/_sources/survey-process-prov/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/survey-process-prov/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/_sources/survey-process-prov/",
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-aerial-survey/_sources/survey-process-prov/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-aerial-survey/_sources/survey-process-prov/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/survey-process-prov/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-aerial-survey/_sources/survey-process-prov/",
       "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/generateddocs/json-full/domain/aerial-survey/survey-process-prov/index.json"
+          "url": "https://ogcincubator.github.io/bblocks-aerial-survey/build/generateddocs/json-full/domain/aerial-survey/survey-process-prov/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/generateddocs/markdown/domain/aerial-survey/survey-process-prov/index.md"
+          "url": "https://ogcincubator.github.io/bblocks-aerial-survey/build/generateddocs/markdown/domain/aerial-survey/survey-process-prov/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/bblock/ogc.domain.aerial-survey.survey-process-prov"
+          "url": "https://ogcincubator.github.io/bblocks-aerial-survey/bblock/ogc.domain.aerial-survey.survey-process-prov"
         }
       }
     },
@@ -103,56 +103,56 @@
         ]
       },
       "dependsOn": [
-        "ogc.geo.geodcat.stac.geodcat-stac-item",
-        "ogc.geo.geodcat.stac.geodcat-stac-collection",
+        "ogc.geo.geodcat.geodcat-records",
         "ogc.domain.aerial-survey.survey-process-prov",
+        "ogc.geo.geodcat.stac.geodcat-stac-item",
         "ogc.geo.moving-features.schema",
-        "ogc.geo.geodcat.geodcat-records"
+        "ogc.geo.geodcat.stac.geodcat-stac-collection"
       ],
-      "ldContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/stac-aerial-survey/context.jsonld",
+      "ldContext": "https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/stac-aerial-survey/context.jsonld",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/stac-aerial-survey/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/stac-aerial-survey/schema.json"
+        "application/yaml": "https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/stac-aerial-survey/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/stac-aerial-survey/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/_sources/stac-aerial-survey/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/_sources/stac-aerial-survey/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/stac-aerial-survey/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/_sources/stac-aerial-survey/",
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-aerial-survey/_sources/stac-aerial-survey/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-aerial-survey/_sources/stac-aerial-survey/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/stac-aerial-survey/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-aerial-survey/_sources/stac-aerial-survey/",
       "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/generateddocs/json-full/domain/aerial-survey/stac-aerial-survey/index.json"
+          "url": "https://ogcincubator.github.io/bblocks-aerial-survey/build/generateddocs/json-full/domain/aerial-survey/stac-aerial-survey/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/generateddocs/markdown/domain/aerial-survey/stac-aerial-survey/index.md"
+          "url": "https://ogcincubator.github.io/bblocks-aerial-survey/build/generateddocs/markdown/domain/aerial-survey/stac-aerial-survey/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/bblock/ogc.domain.aerial-survey.stac-aerial-survey"
+          "url": "https://ogcincubator.github.io/bblocks-aerial-survey/bblock/ogc.domain.aerial-survey.stac-aerial-survey"
         }
       }
     }
   ],
-  "remoteCacheDir": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/_cache",
+  "remoteCacheDir": "https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/_cache",
   "links": [
     {
       "rel": "self",
-      "href": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/register.json",
+      "href": "https://ogcincubator.github.io/bblocks-aerial-survey/build/register.json",
       "type": "application/json",
       "title": "This Building Blocks Register in JSON format"
     },
     {
       "rel": "self",
-      "href": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/bblocks.ttl",
+      "href": "https://ogcincubator.github.io/bblocks-aerial-survey/build/bblocks.ttl",
       "type": "text/turtle",
       "title": "This Building Blocks Register in RDF Turtle format"
     },
     {
       "rel": "self",
-      "href": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/bblocks.jsonld",
+      "href": "https://ogcincubator.github.io/bblocks-aerial-survey/build/bblocks.jsonld",
       "type": "application/ld+json",
       "title": "This Building Blocks Register in JSON-LD format"
     }

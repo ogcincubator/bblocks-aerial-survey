@@ -22,7 +22,7 @@ anyOf:
   - anyOf:
     - $ref: https://ogcincubator.github.io/geodcat-ogcapi-records/build/annotated/geo/geodcat/stac/geodcat-stac-item/schema.yaml
     - $ref: https://ogcincubator.github.io/geodcat-ogcapi-records/build/annotated/geo/geodcat/stac/geodcat-stac-collection/schema.yaml
-  - $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/survey-process-prov/schema.yaml
+  - $ref: https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/survey-process-prov/schema.yaml
 - $ref: https://ogcincubator.github.io/geodcat-ogcapi-records/build/annotated/geo/geodcat/geodcat-records/schema.yaml
 properties:
   track:
@@ -32,8 +32,8 @@ properties:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/stac-aerial-survey/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/stac-aerial-survey/schema.yaml)
+* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/stac-aerial-survey/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/stac-aerial-survey/schema.yaml)
 
 
 # JSON-LD Context
@@ -656,7 +656,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/stac-aerial-survey/context.jsonld)
+[context.jsonld](https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/stac-aerial-survey/context.jsonld)
 
 
 # For developers

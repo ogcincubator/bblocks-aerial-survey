@@ -15,7 +15,7 @@
           ]
         },
         {
-          "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/survey-process-prov/schema.json"
+          "$ref": "https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/survey-process-prov/schema.json"
         }
       ]
     },

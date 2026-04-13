@@ -24,15 +24,15 @@
     "EarthCODE"
   ],
   "shaclShapes": {},
-  "ldContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/survey-process-prov/context.jsonld",
+  "ldContext": "https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/survey-process-prov/context.jsonld",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/survey-process-prov/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/survey-process-prov/schema.json"
+    "application/yaml": "https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/survey-process-prov/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/survey-process-prov/schema.json"
   },
-  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/_sources/survey-process-prov/schema.yaml",
-  "sourceLdContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/_sources/survey-process-prov/context.jsonld",
-  "resolvedSchemaProperties": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/survey-process-prov/resolvedProperties.json",
-  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/_sources/survey-process-prov/",
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-aerial-survey/_sources/survey-process-prov/schema.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-aerial-survey/_sources/survey-process-prov/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/survey-process-prov/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-aerial-survey/_sources/survey-process-prov/",
   "rdfData": [],
   "validationPassed": true,
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: STAC metadata with DCAT mappings for Aerial surveys\n$ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml\n",
