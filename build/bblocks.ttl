@@ -1,0 +1,173 @@
+@prefix bblocks: <https://www.opengis.net/def/bblocks/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.w3.org/ns/oa#> .
+@prefix ns2: <http://www.iana.org/assignments/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix schema: <https://schema.org/> .
+@prefix shacl: <https://www.w3.org/TR/shacl/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<bblocks://ogc.domain.aerial-survey.stac-aerial-survey> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "STAC profile for Aerial Survey descriptions" ;
+    dct:abstract "Describes aspects of aerial surveys to allow generated data to be understood"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/generateddocs/json-full/domain/aerial-survey/stac-aerial-survey/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/bblock/ogc.domain.aerial-survey.stac-aerial-survey> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/generateddocs/markdown/domain/aerial-survey/stac-aerial-survey/index.md> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-04-13"^^xsd:date ;
+    skos:inScheme <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/> ;
+    skos:prefLabel "STAC profile for Aerial Survey descriptions" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/> ;
+    dcat:keyword "DCAT",
+        "EarthCODE",
+        "Records",
+        "STAC",
+        "profile" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/stac-aerial-survey/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.api.records.v1.schemas.linkTemplate> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/linkTemplate/rules.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/stac-aerial-survey/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/stac-aerial-survey/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:dependsOn <bblocks://ogc.domain.aerial-survey.survey-process-prov>,
+        <bblocks://ogc.geo.geodcat.geodcat-records>,
+        <bblocks://ogc.geo.geodcat.stac.geodcat-stac-collection>,
+        <bblocks://ogc.geo.geodcat.stac.geodcat-stac-item>,
+        <bblocks://ogc.geo.moving-features.schema> ;
+    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/_sources/stac-aerial-survey/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/bblocks.ttl> a prov:Entity ;
+    dct:format "text/turtle" ;
+    prov:wasAttributedTo _:N0c545b9b4e8e41fe892924372b0af5ed ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            prov:endedAtTime "2026-04-13T08:42:46.814368"^^xsd:dateTime ;
+            prov:startedAtTime "2026-04-13T08:42:46.610881"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dct:format "application/yaml" ;
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+                [ a prov:Entity ;
+                    dct:format "application/json" ;
+                    dct:hasVersion "git:331be32f5bd94ddacc62acedde803689f08bab64" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/register.json> ] ;
+            prov:wasAssociatedWith _:N0c545b9b4e8e41fe892924372b0af5ed ] .
+
+<bblocks://ogc.domain.aerial-survey.survey-process-prov> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "Aerial Survey Postprocessing" ;
+    dct:abstract "Provenance model for describing post processing undertaken"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/generateddocs/markdown/domain/aerial-survey/survey-process-prov/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/generateddocs/json-full/domain/aerial-survey/survey-process-prov/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/bblock/ogc.domain.aerial-survey.survey-process-prov> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-04-13"^^xsd:date ;
+    skos:inScheme <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/> ;
+    skos:prefLabel "Aerial Survey Postprocessing" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/> ;
+    dcat:keyword "DCAT",
+        "EarthCODE",
+        "Records",
+        "STAC",
+        "profile" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/survey-process-prov/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/survey-process-prov/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/annotated/domain/aerial-survey/survey-process-prov/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:dependsOn <bblocks://ogc.ogc-utils.prov> ;
+    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/_sources/survey-process-prov/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/> a skos:ConceptScheme,
+        dcat:Catalog,
+        bblocks:BBlocksRegister ;
+    rdfs:label "Building Blocks - Aerial Survey Metadata" ;
+    dct:abstract """A building blocks architecture for supporting the description of aerial surveys and the data products generated
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:description """Aerial surveys have many facets that may impact the interpretation of the generated data and the ability to accurately re-survey. 
+
+Accordingly this model supports both coarse and fine-grained descriptions of flight plans and systems.
+
+The goal is to identify and re-use existing OGC standards that address common parts of the domain challenge.
+
+This includes a detail description of an actual flight path using the moving features standard, which allows for correlation of changing conditions in time and space.
+
+Metadata using OGC API records, STAC and DCAT is enabled - and ISO or other metadata record models may be introduced as required,
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:modified "2026-04-13T08:42:31.990170"^^xsd:dateTime ;
+    owl:imports <https://ogcincubator.github.io/bblocks-movingfeatures/build/register.json>,
+        <https://ogcincubator.github.io/bblocks-stac/build/register.json>,
+        <https://ogcincubator.github.io/geodcat-ogcapi-records/build/register.json>,
+        <https://opengeospatial.github.io/bblocks/register.json>,
+        <https://opengeospatial.github.io/ogcapi-sosa/build/register.json> ;
+    skos:hasTopConcept <bblocks://ogc.domain.aerial-survey.stac-aerial-survey>,
+        <bblocks://ogc.domain.aerial-survey.survey-process-prov> ;
+    skos:prefLabel "Building Blocks - Aerial Survey Metadata" ;
+    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON format" ;
+            dct:type "application/json" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/register.json> ],
+        [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
+            dct:type "application/ld+json" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/bblocks.jsonld> ],
+        [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
+            dct:type "text/turtle" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/bblocks.ttl> ] ;
+    foaf:homepage <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/> ;
+    bblocks:hasValidationReport <https://raw.githubusercontent.com/ogcincubator/bblocks-aerial-survey/undefined/build/tests/report.html> .
+
+_:N0c545b9b4e8e41fe892924372b0af5ed a prov:Agent,
+        schema:SoftwareApplication ;
+    rdfs:label "OGC-NA tools" ;
+    dct:hasVersion "0.5.27" ;
+    rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
+

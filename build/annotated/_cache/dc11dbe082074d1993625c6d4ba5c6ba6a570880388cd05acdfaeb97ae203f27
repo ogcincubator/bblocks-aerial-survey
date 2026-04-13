@@ -1,0 +1,133 @@
+{
+  "name": "OGC Moving Features",
+  "abstract": "OGC Moving Features - testbed version for alignment with JSON-FG\n",
+  "description": "Slightly modified from MV 1.1 Prism to conform to JSON-FG model.\n",
+  "modified": "2026-01-25T07:01:15.188054",
+  "tooling": {
+    "bblocks-postprocess": {
+      "commitId": "\"da938c570c326dad590b43582182bcf06cc63198",
+      "shortCommitId": "\"da938c",
+      "date": "2026-01-19T11:49:34+00:00\""
+    }
+  },
+  "gitRepository": "https://github.com/ogcincubator/bblocks-movingfeatures",
+  "gitHubRepository": "https://github.com/ogcincubator/bblocks-movingfeatures/blob/master/",
+  "baseURL": "https://ogcincubator.github.io/bblocks-movingfeatures/",
+  "viewerURL": "https://ogcincubator.github.io/bblocks-movingfeatures/",
+  "validationReport": "https://ogcincubator.github.io/bblocks-movingfeatures/build/tests/report.html",
+  "validationReportJson": "https://ogcincubator.github.io/bblocks-movingfeatures/build/tests/report.json",
+  "imports": [
+    "https://opengeospatial.github.io/bblocks/register.json"
+  ],
+  "bblocks": [
+    {
+      "itemIdentifier": "ogc.geo.moving-features.ontology",
+      "name": "Moving Features ontology",
+      "highlighted": true,
+      "title": "Ontology describing the elements of the Moving Features Schema",
+      "description": "Derived from MF-JSON schema documentation.",
+      "status": "under-development",
+      "version": "1.0.0",
+      "itemClass": "model",
+      "dependsOn": [],
+      "sources": [
+        {
+          "title": "Moving Features Ontology",
+          "link": "https://marcus-to-doc"
+        }
+      ],
+      "rules": [],
+      "dateTimeAddition": "2025-06-12T00:00:00Z",
+      "dateOfLastChange": "2026-01-25",
+      "shaclShapes": {},
+      "ontology": "https://ogcincubator.github.io/bblocks-movingfeatures/build/annotated/geo/moving-features/ontology/ontology.ttl",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-movingfeatures/_sources/ontology/",
+      "rdfData": [],
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-movingfeatures/build/generateddocs/markdown/geo/moving-features/ontology/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-movingfeatures/build/generateddocs/json-full/geo/moving-features/ontology/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-movingfeatures/bblock/ogc.geo.moving-features.ontology"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.geo.moving-features.schema",
+      "name": "Moving Feature Schema",
+      "abstract": "A Moving Feature profile of OGC FG-JSON based on MF-JSON moving features model - but with explicit reuse of common components.",
+      "status": "under-development",
+      "dateTimeAddition": "2023-05-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "isc",
+      "version": "1.0",
+      "dateOfLastChange": "2026-01-25",
+      "sources": [],
+      "maturity": "development",
+      "scope": "unstable",
+      "dependsOn": [
+        "ogc.geo.moving-features.ontology",
+        "ogc.geo.json-fg.feature-lenient"
+      ],
+      "tags": [
+        "prov"
+      ],
+      "group": "Entities",
+      "highlighted": true,
+      "shaclShapes": {},
+      "ldContext": "https://ogcincubator.github.io/bblocks-movingfeatures/build/annotated/geo/moving-features/schema/context.jsonld",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-movingfeatures/build/annotated/geo/moving-features/schema/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-movingfeatures/build/annotated/geo/moving-features/schema/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-movingfeatures/_sources/schema/schema.json",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-movingfeatures/_sources/schema/context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-movingfeatures/_sources/schema/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-movingfeatures/blob/master/build/tests/geo/moving-features/schema/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-movingfeatures/build/generateddocs/markdown/geo/moving-features/schema/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-movingfeatures/build/generateddocs/json-full/geo/moving-features/schema/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-movingfeatures/bblock/ogc.geo.moving-features.schema"
+        }
+      }
+    }
+  ],
+  "remoteCacheDir": "https://ogcincubator.github.io/bblocks-movingfeatures/build/annotated/_cache",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://ogcincubator.github.io/bblocks-movingfeatures/build/register.json",
+      "type": "application/json",
+      "title": "This Building Blocks Register in JSON format"
+    },
+    {
+      "rel": "self",
+      "href": "https://ogcincubator.github.io/bblocks-movingfeatures/build/bblocks.ttl",
+      "type": "text/turtle",
+      "title": "This Building Blocks Register in RDF Turtle format"
+    },
+    {
+      "rel": "self",
+      "href": "https://ogcincubator.github.io/bblocks-movingfeatures/build/bblocks.jsonld",
+      "type": "application/ld+json",
+      "title": "This Building Blocks Register in JSON-LD format"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for ogc.domain.aerial-survey.stac-aerial-survey - STAC profile for Aerial Survey descriptions",
+  "bblockName": "STAC profile for Aerial Survey descriptions",
+  "bblockId": "ogc.domain.aerial-survey.stac-aerial-survey",
+  "generated": "2026-04-13T08:42:46.592613+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "summary": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "result": true
+  },
+  "bblocks": {
+    "ogc.domain.aerial-survey.survey-process-prov": {
+      "title": "Validation report for ogc.domain.aerial-survey.survey-process-prov - Aerial Survey Postprocessing",
+      "bblockName": "Aerial Survey Postprocessing",
+      "bblockId": "ogc.domain.aerial-survey.survey-process-prov",
+      "generated": "2026-04-13T08:42:43.799781+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.domain.aerial-survey.stac-aerial-survey": {
+      "title": "Validation report for ogc.domain.aerial-survey.stac-aerial-survey - STAC profile for Aerial Survey descriptions",
+      "bblockName": "STAC profile for Aerial Survey descriptions",
+      "bblockId": "ogc.domain.aerial-survey.stac-aerial-survey",
+      "generated": "2026-04-13T08:42:46.592613+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    }
+  }
+}
