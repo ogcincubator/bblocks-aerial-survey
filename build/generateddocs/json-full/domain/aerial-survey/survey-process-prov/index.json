@@ -10,10 +10,12 @@
   "itemClass": "schema",
   "register": "ogc-incubator",
   "dependsOn": [
-    "ogc.ogc-utils.prov"
+    "ogc.ogc-utils.prov",
+    "ogc.sosa.features.observationCollection",
+    "ogc.sosa.features.observation"
   ],
   "version": "0.1",
-  "dateOfLastChange": "2026-04-13",
+  "dateOfLastChange": "2026-04-20",
   "sources": [],
   "scope": "dev",
   "tags": [
@@ -23,7 +25,17 @@
     "STAC",
     "EarthCODE"
   ],
-  "shaclShapes": {},
+  "shaclShapes": {
+    "ogc.geo.features.feature": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+    ],
+    "ogc.geo.features.featureCollection": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
+    ],
+    "ogc.sosa.properties.observation": [
+      "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
+    ]
+  },
   "ldContext": "https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/survey-process-prov/context.jsonld",
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/survey-process-prov/schema.yaml",
@@ -35,7 +47,7 @@
   "sourceFiles": "https://ogcincubator.github.io/bblocks-aerial-survey/_sources/survey-process-prov/",
   "rdfData": [],
   "validationPassed": true,
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: STAC metadata with DCAT mappings for Aerial surveys\n$ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Process Model for UAV data processing based on the SOSA Observation (or\n  Observation Collection) Model.\nallOf:\n- $ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml\n- oneOf:\n  - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.yaml\n  - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.yaml\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-aerial-survey",
   "gitPath": "_sources/survey-process-prov"
 }

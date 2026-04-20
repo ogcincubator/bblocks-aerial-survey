@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-incubator",
   "version": "0.1",
-  "dateOfLastChange": "2026-04-13",
+  "dateOfLastChange": "2026-04-20",
   "sources": [],
   "scope": "dev",
   "tags": [
@@ -24,16 +24,22 @@
     "ogc.geo.features.feature": [
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
     ],
+    "ogc.geo.features.featureCollection": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
+    ],
+    "ogc.sosa.properties.observation": [
+      "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
+    ],
     "ogc.api.records.v1.schemas.linkTemplate": [
       "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/linkTemplate/rules.shacl"
     ]
   },
   "dependsOn": [
-    "ogc.geo.geodcat.geodcat-records",
     "ogc.domain.aerial-survey.survey-process-prov",
-    "ogc.geo.geodcat.stac.geodcat-stac-item",
+    "ogc.geo.geodcat.stac.geodcat-stac-collection",
+    "ogc.geo.geodcat.geodcat-records",
     "ogc.geo.moving-features.schema",
-    "ogc.geo.geodcat.stac.geodcat-stac-collection"
+    "ogc.geo.geodcat.stac.geodcat-stac-item"
   ],
   "ldContext": "https://ogcincubator.github.io/bblocks-aerial-survey/build/annotated/domain/aerial-survey/stac-aerial-survey/context.jsonld",
   "schema": {
