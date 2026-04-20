@@ -1,4 +1,7 @@
 "$schema": https://json-schema.org/draft/2020-12/schema
-description: 'STAC metadata with DCAT mappings for Aerial surveys'
-$ref: bblocks://ogc.ogc-utils.prov
-
+description: 'Process Model for UAV data processing based on the SOSA Observation (or Observation Collection) Model.'
+allOf:
+  - $ref: bblocks://ogc.ogc-utils.prov
+  - oneOf:
+    - $ref: bblocks://ogc.sosa.features.observation
+    - $ref: bblocks://ogc.sosa.features.observationCollection
